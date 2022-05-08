@@ -1,0 +1,33 @@
+.right-footer{
+	padding: 55px 20px 60px 20px;
+	border-top: 1px solid #524336;
+	&__email,&__phone{
+		font-size: 20px;
+		color:#FAF6F2;
+	}
+	&__time{
+		font-size: 17px;
+		color: #636B78;
+	}
+	
+	
+}
+
+@media (min-width: 400px){ 
+
+}
+@media (min-width: 576px){ 
+
+}
+@media (min-width: 768px){ 
+
+}
+@media (min-width: 992px){ 
+	.right-footer{
+		border-top: none;
+		border-left: 1px solid #a5764e;
+	}
+}
+@media (min-width: 1200px){ 
+	
+}

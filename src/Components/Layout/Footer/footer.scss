@@ -1,0 +1,31 @@
+.footer{
+	display: flex;
+	flex-direction: column;
+	background-color: #050402;
+	color: #FAF6F2;
+}
+
+
+@media (min-width: 400px){ 
+
+}
+@media (min-width: 576px){ 
+
+}
+@media (min-width: 768px){ 
+
+}
+@media (min-width: 992px){ 
+	.footer{
+		flex-direction: row;
+	}
+	.left-footer{
+		flex:60%;
+	}
+	.right-footer{
+		flex:40%;
+	}
+}
+@media (min-width: 1200px){ 
+	
+}

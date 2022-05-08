@@ -1,0 +1,62 @@
+.left-footer{
+	padding: 55px 20px 30px 20px;
+	display: flex;
+	flex-direction: column;
+	&__politics{
+		display: none;
+	}
+}
+
+.footer-logo{
+	margin: 0px 0px 40px 0px;
+	&__logo-link{
+		display: block;
+		text-align: center;
+	}
+	&__logo-img{
+		width: 100%;
+		max-width: 266px;
+	}
+}
+.menu-footer{
+	// padding: 0px 20px 0px 20px;
+	display: flex;
+	font-style: 17px;
+	&__list{
+		flex:1;
+	}
+	&__item{
+		margin: 0px 0px 30px 0px;
+	}
+	&__link{
+		color: #FAF6F2;
+		transition: .3s;
+		&:hover{
+			color: #BB8C5F;
+		}
+	}
+}
+
+@media (min-width: 400px){ 
+
+}
+@media (min-width: 576px){ 
+	.left-footer{
+		flex-direction: row;
+		& > div{
+			flex:1;
+		}
+	}
+	.menu-footer{
+		padding: 0px 0px 0px 20px;
+	}
+}
+@media (min-width: 768px){ 
+
+}
+@media (min-width: 992px){ 
+
+}
+@media (min-width: 1200px){ 
+	
+}
