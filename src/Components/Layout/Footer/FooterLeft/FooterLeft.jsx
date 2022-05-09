@@ -5,7 +5,7 @@ import logo from '../../../../assets/images/logo.png';
 
 export default function FooterLeft() {
 	return (
-		<section className='footer__left left-footer container'>
+		<section className='footer__left left-footer '>
 			{/* //? ЛОГО + политика*/}
 			<div className=''>
 				<div className='footer-logo'>

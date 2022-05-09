@@ -7,15 +7,15 @@ export default function Main() {
 	const { isAuth } = useSelector(state => state.user);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
-	const goLogin = () => navigate('/login');
+	// const goLogin = () => navigate('/login');
 
 	useEffect(() => {
 		if (!isAuth) {
 			setTimeout(() => {
-				goLogin()
+				navigate('/login')
 			}, 200)
 		}
-	}, [isAuth]);
+	}, [isAuth, navigate]);
 
 	return (
 		<div>

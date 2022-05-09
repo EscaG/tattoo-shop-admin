@@ -6,10 +6,13 @@ import FooterRight from './FooterRight/FooterRight';
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			{/* //todo первая половина футера */}
-			<FooterLeft />
-			{/* //todo вторая половина футера */}
-			<FooterRight />
+			<div className='footer-container container'>
+
+				{/* //todo первая половина футера */}
+				<FooterLeft />
+				{/* //todo вторая половина футера */}
+				<FooterRight />
+			</div>
 
 		</footer>
 	)

@@ -1,8 +1,11 @@
 .footer{
-	display: flex;
-	flex-direction: column;
 	background-color: #050402;
 	color: #FAF6F2;
+
+}
+.footer-container{
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -16,14 +19,14 @@
 
 }
 @media (min-width: 992px){ 
-	.footer{
+	.footer-container{
 		flex-direction: row;
 	}
 	.left-footer{
-		flex:60%;
+		flex:55%;
 	}
 	.right-footer{
-		flex:40%;
+		flex:45%;
 	}
 }
 @media (min-width: 1200px){ 

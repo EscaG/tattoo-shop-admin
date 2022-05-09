@@ -1,14 +1,23 @@
 .left-footer{
-	padding: 55px 20px 30px 20px;
+	padding: 55px 0px 30px 0px;
 	display: flex;
 	flex-direction: column;
 	&__politics{
 		display: none;
+		text-align: center;
+		a{
+			transition: .3s;
+			color: #FAF6F2;
+			font-weight: 500;
+			&:hover{
+				color: #BB8C5F;
+			}
+		}
 	}
 }
 
 .footer-logo{
-	margin: 0px 0px 40px 0px;
+	margin: 0px 0px 50px 0px;
 	&__logo-link{
 		display: block;
 		text-align: center;
@@ -52,11 +61,28 @@
 	}
 }
 @media (min-width: 768px){ 
-
+	.left-footer{
+		padding: 70px 0px 30px 0px;
+		&__politics{
+			display: block;	
+		}
+	}
 }
 @media (min-width: 992px){ 
-
+	.left-footer{
+		padding: 139px 0px 30px 0px;
+		
+	}
 }
-@media (min-width: 1200px){ 
+@media (min-width: 1199px){ 
+	.footer-logo{
+		&__logo-link{
+			// text-align: right;
+		}
+		&__logo-img{
+			width: 100%;
+			max-width: 186px;
+		}
+	}
 	
 }

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login, registration } from '../../store/actions/user-action';
@@ -11,19 +11,19 @@ export default function Login() {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
-	const goMain = () => navigate('/');
+	// const goMain = () => navigate('/');
 
-	// useEffect(() => {
-	// 	if (isAuth) { goMain() }
-	// }, [goMain, isAuth]);
+	useEffect(() => {
+		if (isAuth) { navigate('/') }
+	}, [isAuth, navigate]);
 
-	let goNav = useCallback(
-		() => {
-			if (isAuth) { goMain() }
-		},
-		[goMain, isAuth],
-	)
-	goNav()
+	// let goNav = useCallback(
+	// 	() => {
+	// 		if (isAuth) { goMain() }
+	// 	},
+	// 	[goMain, isAuth],
+	// )
+	// goNav()
 
 
 	const userRegistration = () => {
