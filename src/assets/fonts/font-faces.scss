@@ -1,0 +1,91 @@
+//? ================ Jost ======================
+@font-face {
+	font-family: 'Jost';
+	src: url('Jost-Light.eot');
+	src: local('Jost Light'), local('Jost-Light'),
+			url('Jost-Light.eot?#iefix') format('embedded-opentype'),
+			url('Jost-Light.woff2') format('woff2'),
+			url('Jost-Light.woff') format('woff'),
+			url('Jost-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jost';
+	src: url('Jost-Regular.eot');
+	src: local('Jost Regular'), local('Jost-Regular'),
+			url('Jost-Regular.eot?#iefix') format('embedded-opentype'),
+			url('Jost-Regular.woff2') format('woff2'),
+			url('Jost-Regular.woff') format('woff'),
+			url('Jost-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jost';
+	src: url('Jost-Medium.eot');
+	src: local('Jost Medium'), local('Jost-Medium'),
+			url('Jost-Medium.eot?#iefix') format('embedded-opentype'),
+			url('Jost-Medium.woff2') format('woff2'),
+			url('Jost-Medium.woff') format('woff'),
+			url('Jost-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jost';
+	src: url('Jost-SemiBold.eot');
+	src: local('Jost SemiBold'), local('Jost-SemiBold'),
+			url('Jost-SemiBold.eot?#iefix') format('embedded-opentype'),
+			url('Jost-SemiBold.woff2') format('woff2'),
+			url('Jost-SemiBold.woff') format('woff'),
+			url('Jost-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Jost';
+	src: url('Jost-Bold.eot');
+	src: local('Jost Bold'), local('Jost-Bold'),
+			url('Jost-Bold.eot?#iefix') format('embedded-opentype'),
+			url('Jost-Bold.woff2') format('woff2'),
+			url('Jost-Bold.woff') format('woff'),
+			url('Jost-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+//? ================ Montserrat ======================
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-Regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+			url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+			url('Montserrat-Regular.woff2') format('woff2'),
+			url('Montserrat-Regular.woff') format('woff'),
+			url('Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('Montserrat-Medium.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+			url('Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+			url('Montserrat-Medium.woff2') format('woff2'),
+			url('Montserrat-Medium.woff') format('woff'),
+			url('Montserrat-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+//? ================ Forum ======================
+
+@font-face {
+	font-family: 'Forum';
+	src: local('Forum Regular'), local('Forum-Regular'),
+			url('Forum-Regular.woff2') format('woff2'),
+			url('Forum-Regular.woff') format('woff'),
+			url('Forum-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -40,6 +40,9 @@
 	&__link{
 		color: #FAF6F2;
 		transition: .3s;
+		font-family: Montserrat;
+		font-weight: 500;
+		font-size: 17px;
 		&:hover{
 			color: #BB8C5F;
 		}
@@ -65,6 +68,12 @@
 		padding: 70px 0px 30px 0px;
 		&__politics{
 			display: block;	
+		}
+	}
+	.menu-footer{
+		font-size: 17px;
+		&__link{
+			font-size: 20px;
 		}
 	}
 }
