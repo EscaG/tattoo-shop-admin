@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { login, registration } from '../../store/actions/user-action';
 import { logOut } from '../../store/reducers/user-slice';
 
-export default function Login() {
+export default function LoginPage() {
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 	const { status, error, user, isAuth } = useSelector(state => state.user);

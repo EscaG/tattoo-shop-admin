@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { logOut } from '../../store/reducers/user-slice';
 
-export default function Main() {
+export default function MainPage() {
 	const { isAuth } = useSelector(state => state.user);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -25,4 +25,5 @@ export default function Main() {
 			</div>
 		</div>
 	)
+
 }

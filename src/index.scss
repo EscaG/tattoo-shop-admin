@@ -20,5 +20,31 @@
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	border: 1px solid #fff;
+}
+@media (max-width: 1200px){ 
+	.container{
+		padding: 0 20px;
+
+	}
+}
+.active-link.cart, .active-link.favorite {
+	fill: #BB8C5F;
+}
+.cart, .favorite{
+	transition: .3s;
+	fill: #FAF6F2;
+	&:hover{
+		fill: #BB8C5F;
+	}
+}
+.active-link.user{
+	stroke: #BB8C5F;
+}
+.user{
+	transition: .3s;
+	stroke: #FAF6F2;
+	&:hover{
+		stroke: #BB8C5F;
+	}
 }

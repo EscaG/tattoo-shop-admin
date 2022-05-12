@@ -5,7 +5,7 @@ import './footerright.scss';
 
 export default function FooterRight() {
 	return (
-		<section className='footer__right right-footer '>
+		<section className='footer__right right-footer'>
 			<div>
 				<div className='right-footer__list'>
 					<div className='right-footer__list-item-phone'>

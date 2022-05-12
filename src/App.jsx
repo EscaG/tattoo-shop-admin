@@ -1,8 +1,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './Components/hoc/Layout';
-import Login from './Pages/Login/Login';
-import Registration from './Pages/Registration/Registration';
-import Main from './Pages/Main/Main';
+import LoginPage from './Pages/Login/LoginPage';
+import RegistrationPage from './Pages/Registration/RegistrationPage';
+import CartPage from './Pages/Cart/CartPage';
+import FavoritePage from './Pages/Favorite/FavoritePage';
+import ProfilePage from './Pages/Profile/ProfilePage';
+import MainPage from './Pages/Main/MainPage';
+import Error from './Components/hoc/ErrorHoc';
+import Error404 from './Pages/ErrorPage/Error404';
 
 
 
@@ -13,9 +18,21 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Layout />}>
-					<Route index element={<Main />} />
-					<Route path='login' element={<Login />} />
-					<Route path='registration' element={<Registration />} />
+					<Route index element={<MainPage />} />
+					<Route path='login' element={<LoginPage />} />
+					<Route path='registration' element={<RegistrationPage />} />
+					<Route path='cart' element={<CartPage />} />
+					<Route path='favorite' element={<FavoritePage />} />
+					<Route path='profile' element={<ProfilePage />} />
+
+
+					<Route path='404' element={<Error404 />} />
+					<Route path='*' element={
+						<Error>
+							<Error404 />
+						</Error>
+					}
+					/>
 				</Route>
 			</Routes>
 		</BrowserRouter>

@@ -23,13 +23,14 @@ export default function Layout() {
 		<>
 			{/* //todo HEADER */}
 			<Header />
+
 			{/* //todo MAIN */}
 			<main className='page'>
-
 
 				{/* //todo Outlet */}
 				<Outlet />
 			</main>
+
 			{/* //todo FOOTER */}
 			<Footer />
 		</>
