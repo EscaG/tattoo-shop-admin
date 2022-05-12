@@ -40,7 +40,7 @@ export const login = createAsyncThunk(
 export const checkAuth = createAsyncThunk(
 	'user/checkAuth',
 	async function (_, { rejectWithValue }) {
-		console.log('check');
+		console.log('check auth');
 		try {
 			const response = await $api.get(
 				`${API_URL}/refresh`,

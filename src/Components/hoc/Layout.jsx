@@ -14,7 +14,7 @@ export default function Layout() {
 	}, [dispatch])
 
 	useEffect(() => {
-		console.log('layout');
+		console.log('checkAuth');
 	})
 
 

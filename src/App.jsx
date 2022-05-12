@@ -8,6 +8,7 @@ import ProfilePage from './Pages/Profile/ProfilePage';
 import MainPage from './Pages/Main/MainPage';
 import Error from './Components/hoc/ErrorHoc';
 import Error404 from './Pages/ErrorPage/Error404';
+import CheackLogin from './Components/hoc/CheackLogin';
 
 
 
@@ -18,7 +19,11 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route path='/' element={<Layout />}>
-					<Route index element={<MainPage />} />
+					<Route index element={
+						<CheackLogin redirectTo='/login'>
+							<MainPage />
+						</CheackLogin>
+					} />
 					<Route path='login' element={<LoginPage />} />
 					<Route path='registration' element={<RegistrationPage />} />
 					<Route path='cart' element={<CartPage />} />

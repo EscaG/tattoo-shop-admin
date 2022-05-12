@@ -37,7 +37,7 @@ export default function FooterRight() {
 				</div>
 				<p className='right-footer__time'>Время работы: с 9:00 до 20:00 по мск</p>
 				<div>
-					<a className='right-footer__email' href="mail:mr.driskell@gmail.com">
+					<a className='right-footer__email' href="mailto:mr.driskell@gmail.com">
 						<svg width="21" height="16"  >
 							<SpriteIcons icon="mail" />
 						</svg>

@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './topheader.scss';
 
 export default function TopHeader() {
 	return (
-		<div>TopHeader</div>
+		<section>
+
+			<div className='header-section-top'>TopHeader</div>
+		</section>
 	)
 }

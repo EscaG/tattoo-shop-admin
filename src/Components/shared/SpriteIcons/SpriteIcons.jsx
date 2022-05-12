@@ -75,7 +75,15 @@ export default function SpriteIcons({ icon }) {
 					<circle cx="9.5" cy="5.5" r="4.8" strokeWidth="1.4" />
 				</svg>
 			);
+		case 'search':
+			// width="19" height="19" 
+			return (
+				<svg id='search' viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
+					<ellipse cx="8.86499" cy="8.86499" rx="7.86499" ry="7.86499" stroke="#636B78" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+					<path d="M14.3352 14.7437L17.4187 17.8192" stroke="#636B78" strokeWidth="1.5" strokeLinecap="square" strokeLinejoin="round" />
+				</svg>
 
+			)
 		default:
 			return;
 	}

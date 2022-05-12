@@ -1,17 +1,21 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import Autocompleter from '../../../shared/Autocompleter/Autocompleter';
 import Burger from '../../../shared/Burger/Burger';
 import EntityCount from '../../../shared/EntityCount/EntityCount';
 import PriceFullCart from '../../../shared/PriceFullCart/PriceFullCart';
 import SpriteIcons from '../../../shared/SpriteIcons/SpriteIcons';
 import useWindowSize from '../../../shared/useWindowSize/useWindowSize';
+import MenuList from './MenuList/MenuList';
 import './bottomheader.scss';
 
 
 export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 
 	const size = useWindowSize();
+	const widthXS = process.env.REACT_APP_W_XS;
 	const widthS = process.env.REACT_APP_W_S;
+	// const widthM = process.env.REACT_APP_W_M;
 	const widthXL = process.env.REACT_APP_W_XL;
 
 	const setActiveLinkCart = ({ isActive }) => ((isActive ? 'active-link ' : '') + ' cart header-icons');
@@ -19,7 +23,7 @@ export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 	const setActiveLinkUser = ({ isActive }) => ((isActive ? 'active-link ' : '') + ' user header-icons');
 
 	return (
-		<section className='header-section'>
+		<section className='header-section-bottom'>
 			<div className='header-bottom container'>
 
 				<div className='header-bottom__menu-block'>
@@ -29,6 +33,10 @@ export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 						setIsActiveMenu={setIsActiveMenu}
 					/>
 				</div>
+				{(size.width || 0) > widthS ?
+					<Autocompleter />
+					: null
+				}
 				{(size.width || 0) < widthXL ?
 					<div className='header-bottom__price-block'>
 						<PriceFullCart
@@ -42,7 +50,7 @@ export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 								entity={'17'}
 							/>
 						</NavLink>
-						{(size.width || 0) >= widthS ?
+						{(size.width || 0) > widthXS ?
 							<>
 								<NavLink className={setActiveLinkFavorite} to='/favorite'>
 									<svg width="20" height="18"  >
@@ -63,7 +71,7 @@ export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 						}
 					</div>
 					:
-					null
+					<MenuList />
 				}
 			</div>
 		</section>

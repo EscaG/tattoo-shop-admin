@@ -1,0 +1,21 @@
+.autocompleter{
+	position: relative;
+	flex: 1 1 auto;
+	text-align: center;
+	&__input{
+		padding: 10px 10px 10px 55px;
+		height: 44px;
+		width: 80%;
+		align-self: center;
+		font-size: 15px;
+		border: 1px solid #524336;
+		background-color: #050402;
+		// color: #636B78;
+		color: #fff;
+	}	
+}
+.search-icon{
+	position: absolute;
+	top: 12px;
+	left: calc(10% + 20px);
+}
