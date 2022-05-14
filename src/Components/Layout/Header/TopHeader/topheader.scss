@@ -1,4 +1,21 @@
 .header-section-top{
+	position: relative;
 	height: 70px;
 	border-bottom: 1px solid #524336;
+	&::after{
+		position: absolute;
+		content: '';
+		left: 0px;
+		bottom: -7px;
+		border: 6px solid transparent; 
+		border-left: 10px solid #524336; 
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		right: 0px;
+		bottom: -7px;
+		border: 6px solid transparent; 
+		border-right: 10px solid #524336; 
+	}
 }

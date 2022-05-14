@@ -12,19 +12,13 @@ export default function Header() {
 	return (
 		<header className='header'>
 			{(size.width || 0) >= widthXL ?
-				<>
-					<TopHeader />
-					<BottomHeader
-						isActiveMenu={isActiveMenu}
-						setIsActiveMenu={setIsActiveMenu}
-					/>
-				</>
-				:
-				<BottomHeader
-					isActiveMenu={isActiveMenu}
-					setIsActiveMenu={setIsActiveMenu}
-				/>
+				<TopHeader />
+				: null
 			}
+			<BottomHeader
+				isActiveMenu={isActiveMenu}
+				setIsActiveMenu={setIsActiveMenu}
+			/>
 		</header>
 	)
 }

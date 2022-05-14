@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Autocompleter from '../../../shared/Autocompleter/Autocompleter';
 import Burger from '../../../shared/Burger/Burger';
@@ -8,9 +8,11 @@ import SpriteIcons from '../../../shared/SpriteIcons/SpriteIcons';
 import useWindowSize from '../../../shared/useWindowSize/useWindowSize';
 import MenuList from './MenuList/MenuList';
 import './bottomheader.scss';
+import BurgerContent from '../../../shared/Burger/BurgetContent/BurgerContent';
 
 
 export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
+	const [burgerRef, setBurgerRef] = useState(null)
 
 	const size = useWindowSize();
 	const widthXS = process.env.REACT_APP_W_XS;
@@ -31,10 +33,21 @@ export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 					<Burger
 						isActiveMenu={isActiveMenu}
 						setIsActiveMenu={setIsActiveMenu}
+						setBurgerRef={setBurgerRef}
 					/>
+					{/* {(size.width || 0) < widthXL ? */}
+					<BurgerContent
+						isActiveMenu={isActiveMenu}
+						setIsActiveMenu={setIsActiveMenu}
+						burgerRef={burgerRef}
+					/>
+					{/* : null
+					} */}
 				</div>
 				{(size.width || 0) > widthS ?
-					<Autocompleter />
+					<Autocompleter
+						width={80}
+					/>
 					: null
 				}
 				{(size.width || 0) < widthXL ?

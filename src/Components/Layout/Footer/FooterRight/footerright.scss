@@ -1,6 +1,23 @@
 .right-footer{
+	position: relative;
 	padding: 55px 20px 60px 20px;
 	border-top: 1px solid #524336;
+	&::after{
+		position: absolute;
+		content: '';
+		left: 0px;
+		top: -7px;
+		border: 6px solid transparent; 
+		border-left: 10px solid #524336; 
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		right: 0px;
+		top: -7px;
+		border: 6px solid transparent; 
+		border-right: 10px solid #524336; 
+	}
 	&__email,&__phone{
 		font-size: 20px;
 		color:#FAF6F2;
@@ -67,7 +84,22 @@
 	.right-footer{
 		padding: 129px 0px 100px 20px;
 		border-top: none;
-		border-left: 1px solid #a5764e;
+		border-left: 1px solid #524336;
+		&::after{
+			left: -6px;
+			top: 0px;
+			border-left: none; 
+			border: 6px solid transparent; 
+			border-top: 10px solid #524336;
+		}
+		&::before{
+			right: unset;
+			bottom: 0;
+			left: -6px;
+			border-right: none; 
+			border: 6px solid transparent; 
+			border-bottom: 10px solid #524336;
+		}
 	}
 }
 @media (min-width: 1199px){ 

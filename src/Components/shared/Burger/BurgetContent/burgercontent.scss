@@ -1,0 +1,150 @@
+.burger-content{
+	// padding: 20px;	
+	position: absolute;
+	top: 61px;
+	transition: .5s;
+	left: -100%;
+	height: calc(100% - 61px);
+	width: 100%;
+	max-width: 400px;
+	z-index: 1;
+	border-top: 1px solid #524336;
+	background-color: #050402;
+
+	&::after{
+		position: absolute;
+		content: '';
+		left: 0px;
+		top: -7px;
+		border: 6px solid transparent; 
+		border-left: 10px solid #524336; 
+	}
+	&::before{
+		position: absolute;
+		content: '';
+		right: 0px;
+		top: -7px;
+		border: 6px solid transparent; 
+		border-right: 10px solid #524336; 
+	}
+	h4{
+		font-size: 20px;
+		// margin: 0px 0px 0px 10px;
+	}
+	&__container{
+		height: calc(100% );
+		overflow-y: auto;
+		&::-webkit-scrollbar {
+			width: 0;
+		}
+	}
+	&__menu-container{
+		padding: 20px;
+
+	}
+	&__autocompleter-block{
+		margin: 0px 0px 40px 0px;
+	}
+	&__footer{
+		position: relative;
+		padding: 55px 20px 60px 20px;
+		border-top: 1px solid #524336;
+		&::after{
+			position: absolute;
+			content: '';
+			left: 0px;
+			top: -7px;
+			border: 6px solid transparent; 
+			border-left: 10px solid #524336; 
+		}
+		&::before{
+			position: absolute;
+			content: '';
+			right: 0px;
+			top: -7px;
+			border: 6px solid transparent; 
+			border-right: 10px solid #524336; 
+		}
+	}
+}
+.burger-content._active{
+	left: 0;
+}
+
+.burger-catalog{
+	&__list{
+		position: relative;
+		margin: 0px 0px 20px 20px;
+		padding: 0px 0px 0px 30px;
+		border-left: 2px solid #524336;
+		&::before{
+			position: absolute;
+			content: '';
+			left: -7px;
+			// top: -3px;
+			border: 6px solid transparent; 
+			border-top: 10px solid #524336; 
+		}
+		&::after{
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: -7px;
+			width: 1px;
+			// height: 100%;
+			border: 6px solid transparent; 
+			border-bottom: 10px solid #524336; 
+		}
+	}
+	&__item{
+		margin: 0px 0px 20px 0px;
+		&:last-child{
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	&__link{
+		font-size: 17px;
+		transition: .3s;
+		&:hover{
+			color: #BB8C5F;
+		}
+	}
+}
+
+.burger-small-menu{
+	&__list{
+		margin: 0px 0px 25px 0px;
+	}
+	&__item {
+		margin: 0px 0px 20px 0px;
+	}
+	&__link{
+		font-size: 20px;
+		&:hover{
+			color: #BB8C5F;
+		}
+	}
+}
+
+
+
+
+@media (min-width: 400px){ 
+
+}
+@media (min-width: 576px){ 
+	.burger-content{
+		top: 80px;
+	height: calc(100% - 80px);
+
+	}
+}
+@media (min-width: 768px){ 
+
+}
+@media (min-width: 992px){ 
+
+}
+@media (min-width: 1200px){ 
+
+}
