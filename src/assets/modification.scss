@@ -1,0 +1,64 @@
+.hover-border {
+	span:after {
+		display: block;
+		content: "";
+		background-color: #bb8c5f;
+		height: 1px;
+		width: 0%;
+		left: 50%;
+		bottom: -3px;
+		position: absolute;
+		transition: width 0.3s ease-in-out;
+		transform: translateX(-50%);
+	}
+	span:hover {
+		color: #bb8c5f;
+	}
+	span:hover:after {
+		width: 100%;
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		height: 5px;
+		width: 5px;
+		right: calc(50% - 3px);
+		bottom: -5px;
+		transform: rotateZ(45deg);
+		transition: right 0.45s, background-color 0.4s;
+	}
+	&:before {
+		position: absolute;
+		content: "";
+		height: 5px;
+		width: 5px;
+		bottom: -5px;
+		left: calc(50% - 3px);
+		transform: rotateZ(45deg);
+		transition: left 0.45s, background-color 0.4s;
+	}
+	&:hover {
+		color: #bb8c5f;
+		&:after {
+			right: -4px;
+			background-color: #bb8c5f;
+		}
+		&:before {
+			left: -4px;
+			background-color: #bb8c5f;
+		}
+	}
+}
+.hover-border.active {
+	span:after {
+		width: 100%;
+	}
+	&:after {
+		right: -4px;
+		background-color: #bb8c5f;
+	}
+	&:before {
+		left: -4px;
+		background-color: #bb8c5f;
+	}
+}

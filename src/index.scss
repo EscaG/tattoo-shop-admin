@@ -1,5 +1,7 @@
-@import './assets/reset.scss';
-@import './assets/fonts/font-faces.scss';
+@import "./assets/reset.scss";
+@import "./assets/fonts/font-faces.scss";
+@import "./assets/modification.scss";
+
 #root {
 	display: flex;
 	flex-direction: column;
@@ -14,7 +16,7 @@
 }
 .page {
 	flex: 1 1 auto;
-	background-color: #EEEEEE;
+	background-color: #eeeeee;
 }
 
 .container {
@@ -23,29 +25,30 @@
 	max-width: 1200px;
 	// border: 1px solid #fff;
 }
-@media (max-width: 1240px){ 
-	.container{
+@media (max-width: 1240px) {
+	.container {
 		padding: 0 20px;
-
 	}
 }
-.active-link.cart, .active-link.favorite {
-	fill: #BB8C5F;
+.active-link.cart,
+.active-link.favorite {
+	fill: #bb8c5f;
 }
-.cart, .favorite{
-	transition: .3s;
-	fill: #FAF6F2;
-	&:hover{
-		fill: #BB8C5F;
+.cart,
+.favorite {
+	transition: 0.3s;
+	fill: #faf6f2;
+	&:hover {
+		fill: #bb8c5f;
 	}
 }
-.active-link.user{
-	stroke: #BB8C5F;
+.active-link.user {
+	stroke: #bb8c5f;
 }
-.user{
-	transition: .3s;
-	stroke: #FAF6F2;
-	&:hover{
-		stroke: #BB8C5F;
+.user {
+	transition: 0.3s;
+	stroke: #faf6f2;
+	&:hover {
+		stroke: #bb8c5f;
 	}
 }

@@ -158,8 +158,8 @@ export default function Brands() {
 				<li>
 					<Link to='/'>TURANIUM Fabrika Rotary</Link>
 				</li>
-				<li>
-					<Link to='/'>UNI–CART</Link>
+				<li className='hover-border ' style={{ position: 'relative' }}>
+					<Link to='/'><span>UNI–CART</span></Link>
 				</li>
 				<li>
 					<Link to='/'>Vlad Blad</Link>

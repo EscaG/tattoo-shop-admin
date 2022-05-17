@@ -56,7 +56,6 @@
 			cursor: pointer;
 			position: relative;
 			margin: 0px 30px 0px 0px;
-			// background-color: inherit;
 			font-weight: 600;
 			font-size: 17px;
 			transition: 0.3s;
@@ -69,11 +68,7 @@
 				left: 50%;
 				bottom: -3px;
 				position: absolute;
-				-webkit-transition: width 0.3s ease-in-out;
-				-moz--transition: width 0.3s ease-in-out;
 				transition: width 0.3s ease-in-out;
-				-webkit-transform: translateX(-50%);
-				-moz-transform: translateX(-50%);
 				transform: translateX(-50%);
 			}
 			&:hover {
@@ -94,7 +89,6 @@
 
 		& + label span:after {
 			position: absolute;
-			// display: block;
 			content: "";
 			height: 5px;
 			width: 5px;
@@ -105,7 +99,6 @@
 		}
 		& + label span:before {
 			position: absolute;
-			// display: block;
 			content: "";
 			height: 5px;
 			width: 5px;
@@ -132,11 +125,8 @@
 			background-color: #bb8c5f;
 		}
 	}
-	&__categories {
-	}
-	&__brands {
-	}
 }
+
 @keyframes catalog {
 	0% {
 		opacity: 0;
