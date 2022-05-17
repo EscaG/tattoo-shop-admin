@@ -13,6 +13,7 @@ export default function BurgerContent({ isActiveMenu, setIsActiveMenu, burgerRef
 	useEffect(() => {
 		//* проверка события на клик, если мимо меню - значит закрыть меню 
 		function handleMenu(e) {
+			console.log('isActiveMenu');
 			if (!menuContentRef?.current?.contains(e.target) && burgerRef?.current !== e.target) {
 				if (burgerRef?.current !== e.target.parentElement) {
 					setIsActiveMenu(false);
@@ -20,10 +21,10 @@ export default function BurgerContent({ isActiveMenu, setIsActiveMenu, burgerRef
 			}
 		}
 		if (isActiveMenu) {
-			document.addEventListener('click', (e) => { handleMenu(e) })
+			document.addEventListener('click', handleMenu)
 		}
-		return () => document.removeEventListener('click', (e) => { handleMenu(e) })
-	}, [isActiveMenu, setIsActiveMenu, burgerRef])
+		return () => document.removeEventListener('click', handleMenu)
+	}, [burgerRef, isActiveMenu, setIsActiveMenu])
 
 
 

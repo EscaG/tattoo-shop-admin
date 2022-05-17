@@ -1,0 +1,13 @@
+.burger-brands {
+	display: flex;
+	gap: 40px;
+	li + li {
+		margin: 25px 0px 0px 0px;
+	}
+	li a {
+		transition: 0.3s;
+	}
+	li a:hover {
+		color: #bb8c5f;
+	}
+}

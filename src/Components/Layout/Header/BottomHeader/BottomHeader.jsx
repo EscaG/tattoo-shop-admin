@@ -9,6 +9,7 @@ import useWindowSize from '../../../shared/useWindowSize/useWindowSize';
 import MenuList from './MenuList/MenuList';
 import './bottomheader.scss';
 import BurgerContent from '../../../shared/Burger/BurgetContent/BurgerContent';
+import BurgerCatalogContent from '../../../shared/Burger/BurgerCatalogContent/BurgerCatalogContent';
 
 
 export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
@@ -29,20 +30,31 @@ export default function BottomHeader({ isActiveMenu, setIsActiveMenu }) {
 			<div className='header-bottom container'>
 
 				<div className='header-bottom__menu-block'>
-					<Link className='menu-link' to='/'>Menu</Link>
+					<div className='menu-name' >
+						{(size.width || 0) > widthXL ?
+							'Каталог'
+							:
+							'Меню'
+						}
+					</div>
 					<Burger
 						isActiveMenu={isActiveMenu}
 						setIsActiveMenu={setIsActiveMenu}
 						setBurgerRef={setBurgerRef}
 					/>
-					{/* {(size.width || 0) < widthXL ? */}
-					<BurgerContent
-						isActiveMenu={isActiveMenu}
-						setIsActiveMenu={setIsActiveMenu}
-						burgerRef={burgerRef}
-					/>
-					{/* : null
-					} */}
+					{(size.width || 0) < widthXL ?
+						<BurgerContent
+							isActiveMenu={isActiveMenu}
+							setIsActiveMenu={setIsActiveMenu}
+							burgerRef={burgerRef}
+						/>
+						:
+						<BurgerCatalogContent
+							isActiveMenu={isActiveMenu}
+							setIsActiveMenu={setIsActiveMenu}
+							burgerRef={burgerRef}
+						/>
+					}
 				</div>
 				{(size.width || 0) > widthS ?
 					<Autocompleter

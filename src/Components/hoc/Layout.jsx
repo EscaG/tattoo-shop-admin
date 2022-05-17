@@ -21,7 +21,7 @@ export default function Layout() {
 
 	return (
 		<>
-			{/* //todo HEADER */}
+			{/* //todo HEADERimage.png */}
 			<Header />
 
 			{/* //todo MAIN */}

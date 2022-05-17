@@ -12,7 +12,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 95px;
+		// width: 115px;
 	}
 	&__price-block{
 		// position: relative;
@@ -22,8 +22,9 @@
 		justify-content: space-between;
 	}
 }
-.menu-link{
+.menu-name{
 	font-size: 25px;
+	margin: 0px 10px 0px 0px;
 }
 
 .header-icons{
